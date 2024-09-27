@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        # Map each Roman numeral to its corresponding integer value
+        
         roman_to_int = {
             'I': 1,
             'V': 5,
@@ -18,11 +18,11 @@ class Solution(object):
         total = 0
         prev_value = 0
 
-        # Iterate over the string in reverse order
+    
         for char in reversed(s):
             current_value = roman_to_int[char]
             
-            # If the current value is less than the previous value, subtract it
+        
             if current_value < prev_value:
                 total -= current_value
             else:
