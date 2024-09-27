@@ -19,10 +19,10 @@ class Solution(object):
                 if bracket_map[char] != top_element:
                     return False
             else:
-                # If it's an opening bracket, push it onto the stack
+                
                 stack.append(char)
         
-        # The stack should be empty if all the brackets are closed correctly
+        
         return not stack
 
 
