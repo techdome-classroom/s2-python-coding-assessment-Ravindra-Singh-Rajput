@@ -26,10 +26,10 @@ class Solution(object):
             if current_value < prev_value:
                 total -= current_value
             else:
-                # Otherwise, add it
+                
                 total += current_value
             
-            # Update prev_value to the current value
+            
             prev_value = current_value
 
         return total
